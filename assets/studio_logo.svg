@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bgGrad" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#2c2f36"/>
+      <stop offset="65%" stop-color="#1e2024"/>
+      <stop offset="100%" stop-color="#141518"/>
+    </radialGradient>
+    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2dcc8"/>
+      <stop offset="38%" stop-color="#cfA688"/>
+      <stop offset="72%" stop-color="#9e7356"/>
+      <stop offset="100%" stop-color="#7c563d"/>
+    </linearGradient>
+    <linearGradient id="bronzeSoft" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9e7356" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#e5c7ae" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#9e7356" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base circle -->
+  <circle cx="100" cy="100" r="98" fill="url(#bgGrad)"/>
+
+  <!-- Outer & inner fine bronze rings -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#bronzeGrad)" stroke-width="2.2"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#bronzeSoft)" stroke-width="0.9"/>
+
+  <!-- Elegant flowing hair wave / stylized C-monogram -->
+  <path d="M 134 62
+           C 118 46, 86 44, 66 62
+           C 44 82, 44 118, 66 138
+           C 86 156, 118 154, 134 138"
+        fill="none" stroke="url(#bronzeGrad)" stroke-width="4.2" stroke-linecap="round"/>
+
+  <!-- Secondary graceful hair strands flowing through -->
+  <path d="M 78 58
+           C 98 76, 62 104, 88 128
+           C 102 140, 122 140, 136 126"
+        fill="none" stroke="url(#bronzeGrad)" stroke-width="2.8" stroke-linecap="round"/>
+
+  <path d="M 92 52
+           C 114 74, 78 106, 104 128
+           C 114 136, 128 135, 138 122"
+        fill="none" stroke="url(#bronzeSoft)" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Delicate 4-point diamond sparkle -->
+  <path d="M 140 52 L 143 60 L 151 63 L 143 66 L 140 74 L 137 66 L 129 63 L 137 60 Z"
+        fill="url(#bronzeGrad)"/>
+  <circle cx="122" cy="48" r="2.2" fill="#f2dcc8"/>
+</svg>
